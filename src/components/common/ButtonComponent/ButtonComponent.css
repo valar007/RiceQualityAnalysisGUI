@@ -1,0 +1,15 @@
+.button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  margin-top: 20px;
+  padding: 1rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
+
+.button:hover,
+.button:active {
+  cursor: pointer;
+  color: rgb(0, 195, 255);
+}

@@ -1,10 +1,14 @@
 import React from "react";
 import "./App.css";
-import HeaderComponent from "./components/HeaderComponent/HeaderComponent";
+import FooterComponent from "./components/FooterComponent/FooterComponent";
+import BackgroundComponent from "./components/BackgroundComponent/BackgroundComponent";
+import MainContent from "./container/MainContent/MainContent";
 function App() {
   return (
     <React.Fragment>
-      <HeaderComponent />
+      <BackgroundComponent />
+      <MainContent />
+      <FooterComponent />
     </React.Fragment>
   );
 }
