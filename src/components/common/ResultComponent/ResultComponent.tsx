@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React from 'react'
 import './ResultComponent.css'
 
 
@@ -7,7 +7,7 @@ const ResultComponent = (props:any) => {
         <div className="result-component">
             {props.fileUploaded === false && props.computed === undefined && (
                 <div>
-                    Click the <strong>&#129045;</strong> button to upload an image!
+                    Click the <strong>&#8599;</strong> button to upload an image!
                 </div>
             )}
             {props.fileUploaded === true && props.computed === undefined  && (
@@ -25,7 +25,7 @@ const ResultComponent = (props:any) => {
                 <div>
                     <div className="result-header">Results</div>
                     <div className="result">
-                        <div className="individual-result">PBK: {props.pbk}</div>
+                        <div className="individual-result">Percentage of broken kernels&#40;PBK&#41;: {props.pbk}%</div>
                         <div className="individual-result">Quality: {props.quality}</div>
                         <div className="individual-result">Server file name: {props.fileName}</div>
                     </div>

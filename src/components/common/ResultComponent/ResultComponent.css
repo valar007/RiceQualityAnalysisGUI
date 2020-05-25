@@ -3,9 +3,12 @@
     border: 1px solid white;
     padding: 20px;
     margin: 0 10%;
-    width: 30%;
+    width: 25%;
     margin-top: 50px;
     border-radius: 10px;
+    display: inline-block;
+    position: fixed;
+    left: 0;
 }
 
 .spinner {

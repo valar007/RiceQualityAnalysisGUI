@@ -3,7 +3,6 @@ import { useDropzone } from "react-dropzone";
 import request from 'superagent'
 import "./UploadModalComponent.css";
 const UploadModalComponent = (props: any) => {
-  let returnedData:any = {}
   const onDrop = useCallback((acceptedFiles) => {
     props.setFileUploaded(true)
     const req = request.post("http://localhost:8000/upload")

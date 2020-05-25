@@ -38,7 +38,7 @@ const MainContent = () => {
         <UploadModalComponent setFileUploaded={setFileUploadedFn} setComputed={setComputedFn} setPbk={setPbkFn} setQuality={setQualityFn} setFileName={setFileNameFn}/>
         <ResultComponent fileUploaded={fileUploaded} computed={computed} fileName={fileName} pbk={pbk} quality={quality}/>
       </UploadModal.Provider>
-      <ImageViewComponent />
+      {fileUploaded === true && (<ImageViewComponent fileName={fileName} fileUploaded={fileUploaded} computed={computed} />) }
     </div>
   );
 };
