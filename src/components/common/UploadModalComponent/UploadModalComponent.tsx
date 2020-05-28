@@ -24,14 +24,14 @@ const UploadModalComponent = (props: any) => {
     onDrop,
     noDrag: true, 
     accept: 'image/jpeg',
-    disabled: props.calculatingResult,
+    disabled: props.computedVal,
   });
 
   return (
     <div {...getRootProps()} className="upload-modal">
       <input {...getInputProps()} />
-      {acceptedFiles.length === 0 && <p>Click here to upload the image</p>}
-      {acceptedFiles.length > 0 && <p>The file selected: {acceptedFiles[0].name}</p>}
+      {acceptedFiles.length === 0 && <p className="show-pointer">Click here to upload the image</p>}
+      {acceptedFiles.length > 0 && <p className="no-pointer">The file selected: {acceptedFiles[0].name}</p>}
     </div>
   );
 };

@@ -35,7 +35,7 @@ const MainContent = () => {
     <div className="container">
       <div className="header">Rice Quality Ananlysis</div>
       <UploadModal.Provider value={false}>
-        <UploadModalComponent setFileUploaded={setFileUploadedFn} setComputed={setComputedFn} setPbk={setPbkFn} setQuality={setQualityFn} setFileName={setFileNameFn}/>
+        <UploadModalComponent setFileUploaded={setFileUploadedFn} computedVal={computed} setComputed={setComputedFn} setPbk={setPbkFn} setQuality={setQualityFn} setFileName={setFileNameFn}/>
         <ResultComponent fileUploaded={fileUploaded} computed={computed} fileName={fileName} pbk={pbk} quality={quality}/>
       </UploadModal.Provider>
       {fileUploaded === true && (<ImageViewComponent fileName={fileName} fileUploaded={fileUploaded} computed={computed} />) }
